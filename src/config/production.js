@@ -1,4 +1,4 @@
 export default {
   pathPrefix: "",
-  searchUrl: "/api/find"
+  searchUrl: "/api/filelist"
 }

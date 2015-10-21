@@ -1,32 +1,25 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import ListFiles from './listfiles'
 
 class App extends React.Component {
   constructor( props) {
     super(props)
-  }
-
-  componentDidMount() {
+    this.state = {
+      data: JSON.parse(this.props.files)
+    }
+    console.log('ctor', this.state);
   }
 
   render() {
+    if(!this.state.data.Files) return null;
     return (
       <div className="container">
         <div className="row">
-          Fillista
+          <ListFiles files={this.state.data.Files} />
         </div>
       </div>
     )
   }
 }
 
-function mapStateToProps (state) {
-  return {
-  }
-}
-
-function mapDispatchToProps (dispatch) {
-  return {
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default App

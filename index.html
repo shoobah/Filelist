@@ -19,20 +19,6 @@
 	<meta http-equiv="Content-Language" content="sv" />
 	<meta name="google-translate-customization" content="3a5957a953823a70-3c8697dbeea6cd04-ged1b6a8c0c775f4c-10" />
 	<link rel="shortcut icon" type="image/x-icon" href="http://dev.regiongavle.se/templates/lg/images/favicon.ico" />
-	<script type="text/javascript">
-		<!--
-		(function() {
-			if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
-			if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
-				var msViewportStyle = document.createElement("style");
-				msViewportStyle.appendChild(
-					document.createTextNode("@-ms-viewport{width:auto!important}")
-				);
-				document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-			}
-		})();
-		//-->
-	</script>
 	<link href="http://dev.regiongavle.se/Templates/LG/Styles/bootstrap.min.css" rel="stylesheet" />
 	<link href="http://dev.regiongavle.se/Templates/LG/Styles/regiongb-bootstrap.css" rel="stylesheet" />
 	<link rel="Stylesheet" type="text/css" href="http://dev.regiongavle.se/templates/lg/styles/forum.css" media="screen" />
@@ -265,7 +251,10 @@
 					<!-- MB1 -->
 					<h1>Fillista TEST</h1>
 					<!-- MB2 -->
-					<div id="filelist"></div>
+					<div
+						data-files='{"Files":[{"Name":"150218","Type":"folder","Url":"","Id":"3eecd72d-3c03-4f6c-be2b-872e271bd4e9"},{"Name":"150421","Type":"folder","Url":"","Id":"4224340d-f3f8-4238-b544-acdaf835040c"},{"Name":"150609-10","Type":"folder","Url":"","Id":"d90168c8-0b81-40c7-9706-dd5a8dfdff12"},{"Name":"Handlingar_och_protokoll_2008-2014","Type":"folder","Url":"","Id":"88b6c9e6-5cb2-4cc3-b33c-1e262d56073a"},{"Name":"Regionfullmaktige_2015_ledamoter_ersattare.pdf","Type":"application/pdf","Url":"/globalassets/tyck_till_och_paverka/beslut_och_protokoll/landstingsfullmaktige/regionfullmaktige_2015_ledamoter_ersattare.pdf","Id":"8f42da90-28ac-40ee-a1f8-516585e12564"}]}'
+						id="filelist"
+					>&nbsp;</div>
 					<div class="pagelistbox">
 						<div class="pagelistitemarea noindex">
 						</div>
@@ -357,8 +346,8 @@
 	</form>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="http://dev.regiongavle.se/bower_components/react/react-with-addons.min.js"></script>
-	<script src="http://dev.regiongavle.se/bower_components/react/react-dom.min.js"></script>
+	<script src="http://dev.regiongavle.se/bower_components/react/react-with-addons.js"></script>
+	<script src="http://dev.regiongavle.se/bower_components/react/react-dom.js"></script>
 	<script src="/dev/bundle.js"></script>
 	<script type="text/javascript" src="http://dev.regiongavle.se/Templates/LG/Scripts/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://dev.regiongavle.se/Templates/LG/Scripts/LG.js"></script>

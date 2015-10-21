@@ -1,4 +1,4 @@
 export default {
   pathPrefix: "dev.regiongavle.se/",
-  searchUrl: "http://dev.regiongavle.se/api/find"
+  searchUrl: "http://dev.regiongavle.se/api/filelist"
 }
