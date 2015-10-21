@@ -8,8 +8,8 @@ module.exports = {
     entry: path.resolve(__dirname + '/src/index'),
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'findpage.min.js',
-        publicPath: '/JS/Findpage/dist/'
+        filename: 'filelist.min.js',
+        publicPath: '/JS/Filelist/dist/'
     },
     externals: {
       "react": "React",
