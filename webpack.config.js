@@ -12,8 +12,8 @@ module.exports = {
     ]
   },
   externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
+    'react': 'React',
+    'react-dom': 'ReactDOM'
   },
   output: {
     path: path.join(__dirname, 'dev'),
@@ -24,7 +24,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.js[x]?$/,
         loaders: ['babel'],
         include: path.join(__dirname, 'src'),
         exclude: path.join(__dirname, 'node_modules')

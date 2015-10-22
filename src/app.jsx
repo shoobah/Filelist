@@ -10,12 +10,14 @@ class App extends React.Component {
     console.log('ctor', this.state);
   }
 
+
   render() {
-    if(!this.state.data.Files) return null;
+    console.log('this.state', this.state)
+    if(!this.state.data) return null
     return (
       <div className="container">
         <div className="row">
-          <ListFiles files={this.state.data.Files} />
+          <ListFiles key={'root'} files={this.state.data}/>
         </div>
       </div>
     )
